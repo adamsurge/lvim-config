@@ -6,6 +6,11 @@ wk.register({
     ["<C-Tab>"] = { "<cmd>BufferLineCycleNext<cr>", "Next buffer" },
     ["<C-S-Tab>"] = { "<cmd>BufferLineCyclePrev<cr>", "Previous buffer" },
     ["<A-S-f>"] = { "<cmd>lua require('lvim.lsp.utils').format()<cr>", "Format" },
+    ["<leader>r"] = {
+        name = "+Rename",
+        n = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
+    },
+    ["<F2>"] = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename" },
 }, { mode = "n" })
 
 -- Visual mode maps
