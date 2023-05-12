@@ -1,4 +1,6 @@
 lvim.plugins = {
+    'stevearc/dressing.nvim',
+    {
         "simrat39/rust-tools.nvim",
         lazy = true,
         dependencies = {
@@ -11,4 +13,5 @@ lvim.plugins = {
         end,
         ft = { "rust", "rs" },
         -- enabled = lvim.builtin.rust_programming.active,
+    }
 }
